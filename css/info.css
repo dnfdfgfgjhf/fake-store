@@ -12,7 +12,7 @@ header {
   text-align: center;
 }
 
-/* Reset cơ bản */
+/* Reset web */
 * {
   margin: 0;
   padding: 0;
@@ -98,7 +98,21 @@ header h1 {
   color: #4b5563;
 }
 
-/* Responsive cho mobile */
+.buy_now {
+  margin-top: 10px ;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid black;
+  background: #1f2937; /* xanh navy đậm */
+  color: white;
+}
+.buy_now:hover {
+  background: #111827;
+  transform: translateY(-3px); /* nổi lên */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.025);
+}
+
+/* Responsive cho đth */
 @media (max-width: 768px) {
   .products_info {
     grid-template-columns: 1fr;
