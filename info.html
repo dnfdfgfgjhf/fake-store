@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FakeStore - info</title>
-    <link rel="stylesheet" href="./css/info.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FakeStore - info</title>
+  <link rel="stylesheet" href="./css/info.css">
 </head>
+
 <body>
-    <header>
-        <h1>FakeTaxi Shop</h1>
-    </header>
+  <header class="navbar">
+    <div class="logo">FakeTaxi Shop</div>
 
-    <section class="products_info">
-      <div class="poster">
-        <img id="preview-img" alt="Poster" />
-      </div>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
+    </nav>
 
-      <div class="details">
-        <p id="products-id"></p>
-        <h1 id="products-title"></h1>
-        <p id="products-price"></p>
-        <p id="products-category"></p>
-        <p id="products-description"></p>
-        <button class="buy_now" id="buy now">Buy now</button>
-    </section>
+    <div class="cart">
+      🛒 Cart
+    </div>
+  </header>
 
-    <script src="./js/info.js"></script>
+  <section class="products_info">
+    <div class="poster">
+      <img id="preview-img" alt="Poster" />
+    </div>
+
+    <div class="details">
+      <p id="products-id"></p>
+      <h1 id="products-title"></h1>
+      <p id="products-price"></p>
+      <p id="products-category"></p>
+      <p id="products-description"></p>
+      <button class="buy_now" id="buy now">Buy now</button>
+      <button class="buy_now" id="details">Details</button>
+  </section>
+
+  <script src="./js/info.js"></script>
 </body>
+
 </html>

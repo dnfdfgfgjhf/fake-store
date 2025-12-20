@@ -14,7 +14,7 @@ fetch('https://fakestoreapi.com/products')
         <img src="${products.image}" alt="${products.title}" />
         <h3>${products.title}</h3>
         <p>$${products.price}</p>
-        <button>Add to Cart</button>
+        <button>See details</button>
       `
 
       div.addEventListener("click", () => {
