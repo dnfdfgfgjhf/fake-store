@@ -1,26 +1,57 @@
 <!DOCTYPE html>
-<html lang="vi">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FakeStore - Carts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng</title>
     <link rel="stylesheet" href="./css/carts.css">
 </head>
-
 <body>
-
+    <!-- Header -->
     <header>
-        <h1> Danh sách giỏ hàng</h1>
+        <div class="container_menu">
+            <h1 class="logo">FakeTaxi</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="carts.html" class="active">Giỏ hàng</a></li>
+                </ul>
+            </nav>
+            <div id="user-status"></div>
+        </div>
     </header>
 
-    
-    <main id="cart-container">
+    <!-- Giỏ hàng -->
+    <section class="cart">
+        <div class="container">
+            <h2>Giỏ hàng của bạn</h2>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Giá</th>
+                        <th>Thành tiền</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Các sản phẩm sẽ được hiển thị tại đây -->
+                </tbody>
+            </table>
+            <div class="cart-summary">
+                <p><strong>Tổng cộng:</strong> <span id="cart-total">0 VND</span></p>
+                <button id="checkout-btn" class="btn">Thanh toán</button>
+            </div>
+        </div>
+    </section>
 
-
-    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Laptop Shop.</p>
+        </div>
+    </footer>
 
     <script src="./js/carts.js"></script>
 </body>
-
 </html>
